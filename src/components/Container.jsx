@@ -10,7 +10,7 @@ function IndexContainer() {
     <div>
       <CssBaseline />
       <Container>
-        <Typography>ffffff</Typography>
+        <Typography></Typography>
       </Container>
     </div>
   );

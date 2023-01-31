@@ -4,7 +4,7 @@ import { Toolbar, Typography } from "@material-ui/core";
 function Footer() {
   return (
     <>
-      <Toolbar style={{ justifyContent: "center" }} sx={{ bgcolor: "#282c34" }}>
+      <Toolbar style={{ justifyContent: "center", marginTop:10}} sx={{ bgcolor: "#282c34" }}>
         <Typography variant="caption" sx={{ color: "#fff" }}>
           @Copyrigth dy Comsic Power by Thanasorn 2022
         </Typography>
