@@ -181,7 +181,7 @@ export default function HomeCowList() {
                 <Typography align="center">1Y9M3D</Typography>
                 </TableCell>
                 <TableCell>
-                <Typography align="center">เพศเมีย</Typography>
+                <Typography align="center">เมีย</Typography>
                 </TableCell>
               </TableRow>
             </Table>
