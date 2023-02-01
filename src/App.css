@@ -12,6 +12,9 @@ body,
 }
 .App {
   text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .App-logo {
@@ -40,8 +43,8 @@ body,
   color: #61dafb;
 }
 
-.button{
-  color:"#7F9F9A"
+.button {
+  color: "#7F9F9A";
 }
 
 @keyframes App-logo-spin {

@@ -6,6 +6,8 @@ import Footer from "../components/Footer";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import SearchIcon from "@mui/icons-material/Search";
 import InputBase from "@mui/material/InputBase";
+import AddIcon from "@mui/icons-material/Add";
+
 import {
   Paper,
   Box,
@@ -85,6 +87,7 @@ export default function HomeCowList() {
           mx: "auto",
           mt: 10,
           padding: 5,
+          borderRadius: 3,
         }}
       >
         <ThemeProvider theme={theme}>
@@ -92,13 +95,17 @@ export default function HomeCowList() {
             <Grid item xs={1} md={1}>
               <Button
                 color="secondary"
-                sx={{ borderRadius: 5, 
-                  padding: 1, 
+                sx={{
+                  borderRadius: 5,
+                  padding: 1,
                   minWidth: 100,
                   border: 1,
-                  boxShadow: "rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;", }}
+                  boxShadow:
+                    "rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;",
+                }}
                 variant="contained"
               >
+                <AddIcon />
                 เพิ่มวัว
               </Button>
             </Grid>
@@ -118,26 +125,23 @@ export default function HomeCowList() {
                     backgroundColor: "#7F9F9A",
                     borderRadius: 5,
                     border: 0,
-                    boxShadow: "rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;",
+                    boxShadow:
+                      "rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;",
                   }}
                 >
-                  <MenuItem value="">
-                    <em>None</em>
-                  </MenuItem>
-                  <MenuItem value={10}>Ten</MenuItem>
-                  <MenuItem value={20}>Twenty</MenuItem>
-                  <MenuItem value={30}>Thirty</MenuItem>
+                  <MenuItem value={10}>เพศผู้</MenuItem>
+                  <MenuItem value={20}>เพศเมีย</MenuItem>
                 </Select>
               </FormControl>
             </Grid>
             <Grid item xs={4}>
-              <Typography sx={{ fontSize: 24 }}>
+              <Typography sx={{ fontSize: 24 }} align="left">
                 ระบบจัดการฟาร์มวัวบ้านๆ
               </Typography>
             </Grid>
 
             <Grid>
-              <Search item xs={4} sx={{mt:2}}>
+              <Search item xs={4} sx={{ mt: 2 }}>
                 <SearchIconWrapper>
                   <SearchIcon />
                 </SearchIconWrapper>
@@ -157,31 +161,32 @@ export default function HomeCowList() {
           >
             <Table sx={{ minWidth: 650 }}>
               <TableRow>
-                <TableCell colSpan={2} align="center">ชื่อวัว</TableCell>
-                <TableCell colSpan={2} align="center">น้ำเชื้อตัวผู้</TableCell>
+                <TableCell colSpan={2} align="center">
+                  ชื่อวัว
+                </TableCell>
                 <TableCell align="center">อายุ</TableCell>
                 <TableCell align="center">เพศ</TableCell>
+                <TableCell align="center">อื่นๆ</TableCell>
               </TableRow>
               <TableRow>
                 <TableCell align="right">
-                  <img style={{borderRadius:30, height:50, width:50,}}
-                  src="https://cms.dmpcdn.com/dara/2021/11/10/22126e10-41d7-11ec-ac29-755e2c04978c_original.jpg"></img>
+                  <img
+                    style={{ borderRadius: 30, height: 50, width: 50 }}
+                    src="https://cms.dmpcdn.com/dara/2021/11/10/22126e10-41d7-11ec-ac29-755e2c04978c_original.jpg"
+                  ></img>
                 </TableCell>
                 <TableCell>
-                <Typography align="left">นิล</Typography>
+                  <Typography align="left">นิล</Typography>
                 </TableCell>
-                <TableCell align="right">
-                  <img style={{borderRadius:30, height:50, width:50,}}
-                  src="https://cms.dmpcdn.com/dara/2021/11/10/22126e10-41d7-11ec-ac29-755e2c04978c_original.jpg"></img>
+
+                <TableCell>
+                  <Typography align="center">1Y9M3D</Typography>
                 </TableCell>
                 <TableCell>
-                <Typography align="left">GGGYFHJH-5</Typography>
+                  <Typography align="center">เมีย</Typography>
                 </TableCell>
                 <TableCell>
-                <Typography align="center">1Y9M3D</Typography>
-                </TableCell>
-                <TableCell>
-                <Typography align="center">เมีย</Typography>
+                  <Typography align="center">GGGYFHJH-5</Typography>
                 </TableCell>
               </TableRow>
             </Table>
