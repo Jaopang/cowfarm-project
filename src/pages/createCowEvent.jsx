@@ -113,6 +113,7 @@ export default function CreateCowEvent() {
                   type={"email"}
                   variant="outlined"
                   placeholder="กรุณาใส่ชื่อวัว"
+                  sx={{width:265}}
                 />
               </Grid>
               <Grid
@@ -159,6 +160,7 @@ export default function CreateCowEvent() {
                   value={age}
                   label="Age"
                   onChange={handleChange}
+                  sx={{width:100}}
                 >
                   <MenuItem value={10}>เพศผู้</MenuItem>
                   <MenuItem value={20}>เพศเมีย</MenuItem>
@@ -183,6 +185,7 @@ export default function CreateCowEvent() {
                   type={"detail"}
                   variant="outlined"
                   placeholder="กรุณาใส่ชื่อน้ำเชื้อตัวผู้"
+                  sx={{width:265}}
                 />
               </Grid>
               <Grid
@@ -228,6 +231,7 @@ export default function CreateCowEvent() {
                   type={"detail"}
                   variant="outlined"
                   placeholder="รายละเอียดต่างๆของวัว"
+                  sx={{width:265}}
                 />
               </Grid>
             </Grid>

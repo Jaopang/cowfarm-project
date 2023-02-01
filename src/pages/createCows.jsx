@@ -112,6 +112,7 @@ export default function CreateCows() {
                   type={"email"}
                   variant="outlined"
                   placeholder="กรุณาใส่ชื่อวัว"
+                  sx={{width:265}}
                 />
               </Grid>
               <Grid
@@ -158,6 +159,7 @@ export default function CreateCows() {
                   value={age}
                   label="Age"
                   onChange={handleChange}
+                  sx={{width:100}}
                 >
                   <MenuItem value={10}>เพศผู้</MenuItem>
                   <MenuItem value={20}>เพศเมีย</MenuItem>
@@ -171,7 +173,7 @@ export default function CreateCows() {
                 sx={{ marginTop: 1 }}
                 justifyContent="center"
               >
-                <Typography variant="contained" sx={{ marginTop: 15 }}>
+                <Typography variant="contained" sx={{ marginTop: 15}}>
                   อื่นๆ :{" "}
                 </Typography>
               </Grid>
@@ -181,7 +183,9 @@ export default function CreateCows() {
                   margin="normal"
                   type={"detail"}
                   variant="outlined"
+                  fullWidth={true}
                   placeholder="รายละเอียดต่างๆของวัว"
+                  sx={{ width:265 }}
                 />
               </Grid>
             </Grid>
