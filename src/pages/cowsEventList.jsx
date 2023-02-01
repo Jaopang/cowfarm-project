@@ -90,13 +90,14 @@ export default function CowsEventlist() {
         }}
       >
         <ThemeProvider theme={theme}>
-          <Grid container spacing={2}>
-            <Grid item xs={6} align="left">
+          <Grid container spacing={2} 
+          sx={{ml:35}}>
+            <Grid item xs={6} align="center">
               <Typography sx={{ fontSize: 24 }}>
                 ระบบจัดการฟาร์มวัวบ้านๆ
               </Typography>
             </Grid>
-            <Grid align="right">
+            <Grid>
               <Search item xs={6} sx={{ mt: 2 }}>
                 <SearchIconWrapper>
                   <SearchIcon />
@@ -123,7 +124,7 @@ export default function CowsEventlist() {
                 <TableCell colSpan={2} align="center">
                   ชื่อวัว
                 </TableCell>
-                <TableCell align="center">น้ำเชื้อเพสผู้</TableCell>
+                <TableCell align="center">น้ำเชื้อเพศผู้</TableCell>
                 <TableCell align="center">วันติดสัด</TableCell>
                 <TableCell align="center">ตรวจครรภ์</TableCell>
                 <TableCell align="center">กำหนดคลอด</TableCell>
