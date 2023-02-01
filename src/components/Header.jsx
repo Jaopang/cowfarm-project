@@ -23,6 +23,7 @@ import {
   ListItemIcon,
   ListItemText,
 } from "@mui/material";
+import AgricultureTwoToneIcon from "@mui/icons-material/AgricultureTwoTone";
 
 const Item = styled(Paper)(({ theme }) => ({
   padding: theme.spacing(1),
@@ -45,13 +46,18 @@ export default function Header() {
     setAnchorElNav(null);
   };
 
-
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
   const appbar = (
     <div>
-      <Stack direction="row" spacing={2} sx={{ marginX: "auto" }}>
+      <Stack direction="row" spacing={1} sx={{ marginX: "auto", marginTop: 1 }}>
+        <Grid>
+          <ListItemButton href="/home">
+            <AgricultureTwoToneIcon />
+            <ListItemText primary="ระบบจัดการฟาร์มวัวบ้านๆ" />
+          </ListItemButton>
+        </Grid>
         <Grid>
           <ListItemButton href="/home">
             <ListItemText primary="หน้าแรก" />
@@ -73,13 +79,12 @@ export default function Header() {
           </ListItemButton>
         </Grid>
         <Grid>
-          <ListItemButton  >
+          <ListItemButton>
             <ListItemText primary="ออกจากระบบ" />
           </ListItemButton>
         </Grid>
-        <Grid 
-        sx={{minWidth:400}} align="right">
-          <Typography sx={{mt:2}}>ชื่อผู้ใช้ :</Typography>
+        <Grid sx={{ minWidth: 200 }} align="right">
+          <Typography sx={{ mt: 1 }}>ชื่อผู้ใช้ :</Typography>
         </Grid>
       </Stack>
     </div>
@@ -90,7 +95,7 @@ export default function Header() {
       <AppBar
         position="fixed"
         sx={{
-          height: 50,
+          height: 60,
           boxShadow: "none",
           zIndex: 0,
           backgroundColor: "#282c34",

@@ -87,11 +87,11 @@ export default function CowsEventlist() {
           mt: 10,
           padding: 5,
           borderRadius: 3,
+          marginTop: 15,
         }}
       >
         <ThemeProvider theme={theme}>
-          <Grid container spacing={2} 
-          sx={{ml:35}}>
+          <Grid container spacing={2} sx={{ ml: 35 }}>
             <Grid item xs={6} align="center">
               <Typography sx={{ fontSize: 24 }}>
                 ระบบจัดการฟาร์มวัวบ้านๆ

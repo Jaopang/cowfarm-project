@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { Box, Button, TextField, Typography } from "@mui/material";
+import { api } from "../baseURL/url";
+import { useNavigate } from "react-router-dom";
 
 export default function Login() {
   return (
@@ -48,16 +50,21 @@ export default function Login() {
             sx={{ marginTop: 3, borderRadius: 3 }}
             variant="contained"
             color="warning"
-            // color="#282c34"
+            // onClick={onLogin}
           >
             ลงชื่อเข้าใช้
           </Button>
-          <Button sx={{ marginTop: 3, borderRadius: 3 }} variant="contained">
+          <Button
+            sx={{ marginTop: 3, borderRadius: 3 }}
+            variant="contained"
+            href="/register"
+          >
             สมัครสมาชิก
           </Button>
-          <br />
         </Box>
       </from>
+      <br />
+      <br />
       <br />
     </div>
   );

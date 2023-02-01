@@ -78,6 +78,7 @@ export default function HomeCowList() {
     <>
       <Header />
       <Container />
+      {/* <br /> <br /> */}
       <Box
         style={{ justifyContent: "center" }}
         sx={{
@@ -88,6 +89,7 @@ export default function HomeCowList() {
           mt: 10,
           padding: 5,
           borderRadius: 3,
+          marginTop: 15,
         }}
       >
         <ThemeProvider theme={theme}>
@@ -104,6 +106,7 @@ export default function HomeCowList() {
                     "rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;",
                 }}
                 variant="contained"
+                href="/home/createCows"
               >
                 <AddIcon />
                 เพิ่มวัว

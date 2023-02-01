@@ -2,6 +2,8 @@ import React from "react";
 import { Box, Button, TextField, Typography, Grid } from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import AddPhotoAlternateIcon from "@mui/icons-material/AddPhotoAlternate";
+// import { api } from "../baseURL/url";
+// import { useNavigate } from "react-router-dom";
 
 const theme = createTheme({
   palette: {
@@ -12,6 +14,15 @@ const theme = createTheme({
 });
 
 export default function Register() {
+  // const navigate = useNavigate();
+
+  // const onFinish = async (values) => {
+  //   values.userImage = await toDataURL(values.file);
+  //   api
+  //     .post("/api/user", values)
+  //     .then((res) => navigate(`/createnewfarm/${res.data.id}`));
+  //   console.log("Success:", values);
+  // };
   return (
     <div>
       <from>
@@ -52,7 +63,13 @@ export default function Register() {
                 borderRadius={5}
               >
                 อัพรูปภาพ
-                <input hidden accept="image/*" multiple type="file" />
+                <input
+                  hidden
+                  accept="image/*"
+                  multiple
+                  type="file"
+                  onChange={""}
+                />
                 <AddPhotoAlternateIcon />
               </Button>
             </div>
@@ -168,14 +185,13 @@ export default function Register() {
               sx={{ marginTop: 3, borderRadius: 3 }}
               variant="contained"
               color="secondary"
-
-              // color="#282c34"
+              htmlType="submit"
+              className="btn-save"
+              // onClick={onFinish}
             >
               สมัครสมาชิก
             </Button>
-            {/* <Button sx={{ marginTop: 3, borderRadius: 3 }} variant="contained">
-            สมัครสมาชิก
-          </Button> */}
+
             <br />
           </ThemeProvider>
         </Box>

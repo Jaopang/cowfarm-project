@@ -27,6 +27,7 @@ export default function Profile() {
           mt: 10,
           padding: 5,
           borderRadius: 3,
+          marginTop: 15,
         }}
       >
         <ThemeProvider theme={theme}>
